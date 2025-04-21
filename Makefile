@@ -238,7 +238,7 @@ no-sync-config-targets := $(no-dot-config-targets) install %install \
 config-targets  := 0
 mixed-targets   := 0
 dot-config      := 1
-may-sync-config := 1
+may-sync-config := 0
 
 ifneq ($(filter $(no-dot-config-targets), $(MAKECMDGOALS)),)
 	ifeq ($(filter-out $(no-dot-config-targets), $(MAKECMDGOALS)),)
